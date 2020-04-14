@@ -18,4 +18,9 @@ public class CameraTracking : MonoBehaviour
        
         transform.LookAt(mycam.ScreenToViewportPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, mycam.nearClipPlane)), Vector3.up);
     }
+
+    private void RotateView()
+    {
+       // m_MouseLook.LookRotation(transform, m_Camera.transform);
+    }
 }
