@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CameraTracking.cs" />
+    <Compile Include="Assets\MemoryObjectIndividual.cs" />
     <Compile Include="Assets\MemoryObjects.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\EmojiAtlasBaker.cs" />
     <Compile Include="Assets\Scripts\ShowOffEmoji.cs" />
     <Compile Include="Assets\SpawnPoint.cs" />
+    <Compile Include="Assets\Timer.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\EmojiInfo\info.txt" />
     <Reference Include="Unity.Timeline.Editor">
