@@ -6,22 +6,47 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public int learningPhaseTime = 4;
-    public int testingPhaseTime = 5;
+    public int testingPhaseTime = 50;
     private double currentPhaseTime;
     private int currentPhase = 0;
     private double endOfPastPhaseTime = 0.0f;
     public Text displayText;
+    public StimulusObject stimulusObject;
+    public string letterClicked;
+
+    public float trialStartTime;
 
     // Start is called before the first frame update
     void Start()
     {
+        stimulusObject.gameObject.SetActive(false);
+    }
 
+    public void letterIsClicked(string letter)
+    {
+        letterClicked = letter;
+        if (currentPhase == 3)
+        {
+            if (letterClicked == stimulusObject.stimulusText.text)
+            {
+                float timeTaken = Time.time - trialStartTime;
+                print("correct! " + timeTaken.ToString());
+                
+                trialStartTime = Time.time;
+                stimulusObject.AssignRandomLetter();
+            }
+            else
+            {
+                print("incorrect :(");
+            }
+            
+        }
     }
 
     void RunTestingStimulus()
     {
-
-
+        stimulusObject.gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -31,6 +56,8 @@ public class Timer : MonoBehaviour
         {
             currentPhase++;
             endOfPastPhaseTime = Time.time;
+            if (currentPhase == 3)
+                trialStartTime = Time.time;
         }
 
         switch (currentPhase) {
