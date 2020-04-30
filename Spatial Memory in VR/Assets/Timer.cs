@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SpatialTracking;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Timer : MonoBehaviour
 {
@@ -13,8 +15,15 @@ public class Timer : MonoBehaviour
     public Text displayText;
     public StimulusObject stimulusObject;
     public string letterClicked;
+    public MemoryObjects memoryObjects;
+    public TrackedPoseDriver camera;
 
     public float trialStartTime;
+
+    private void Awake()
+    {
+        UnityEngine.XR.XRSettings.enabled = false;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -25,21 +34,24 @@ public class Timer : MonoBehaviour
     public void letterIsClicked(string letter)
     {
         letterClicked = letter;
+        string printout = "";
         if (currentPhase == 3)
         {
             if (letterClicked == stimulusObject.stimulusText.text)
             {
-                float timeTaken = Time.time - trialStartTime;
-                print("correct! " + timeTaken.ToString());
-                
-                trialStartTime = Time.time;
-                stimulusObject.AssignRandomLetter();
+                printout += "correct ";
             }
             else
             {
-                print("incorrect :(");
+                printout += "incorrect ";
             }
-            
+            float timeTaken = Time.time - trialStartTime;
+            printout += stimulusObject.gameObject.name + " time taken " + timeTaken.ToString() + " global timer " + Time.time.ToString();
+            print(printout);
+
+            trialStartTime = Time.time;
+            stimulusObject.AssignRandomLetter();
+
         }
     }
 
@@ -54,6 +66,7 @@ public class Timer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            print("transition to " + (currentPhase + 1) + " at " + Time.time);
             currentPhase++;
             endOfPastPhaseTime = Time.time;
             if (currentPhase == 3)
@@ -72,6 +85,7 @@ public class Timer : MonoBehaviour
                 if (currentPhaseTime <= 0)
                 {
                     // finishing learning phase
+                    print("transition to " + (currentPhase + 1) + " at " + Time.time);
                     currentPhase++;
                 }
                 break;
@@ -80,13 +94,20 @@ public class Timer : MonoBehaviour
                 displayText.text = "Break between phases";
                 break;
             case 3:
+                //UnityEngine.XR.XRSettings.enabled = true;
+                camera.enabled = true;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                //camera.gameObject.GetComponentInParent<FirstPersonController>().enabled = false;
                 currentPhaseTime = System.Math.Round(testingPhaseTime - (Time.time - endOfPastPhaseTime), 2);
                 displayText.text = "Testing Phase\n" + currentPhaseTime.ToString();
                 if (currentPhaseTime <= 0)
                 {
                     // finishing learning phase
+                    print("transition to " + (currentPhase + 1) + " at " + Time.time);
                     currentPhase++;
                 }
+                memoryObjects.SetObjectsBlank();
                 RunTestingStimulus();
                 break;
             case 4:

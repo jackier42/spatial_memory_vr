@@ -5,4 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 1b93c74e7ac3cd747ac1adc66d27a229,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a90ef0fed13735e47a5f1d290f0bdc0e,
+      type: 2}

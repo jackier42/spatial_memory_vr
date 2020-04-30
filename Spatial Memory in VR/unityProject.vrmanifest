@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.spatialmemoryinvr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\Ari\\Documents\\GitHub\\spatial_memory_vr\\Spatial Memory in VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Spatial Memory in VR [Testing]"
+        }
+      }
+    }
+  ]
+}
