@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraRaycast.cs" />
     <Compile Include="Assets\CameraTracking.cs" />
     <Compile Include="Assets\MemoryObjectIndividual.cs" />
     <Compile Include="Assets\MemoryObjects.cs" />
@@ -78,7 +79,15 @@
     <Compile Include="Assets\SpawnPoint.cs" />
     <Compile Include="Assets\StimulusObject.cs" />
     <Compile Include="Assets\Timer.cs" />
+    <Compile Include="Assets\TrackMouse.cs" />
+    <None Include="Assets\Resources\Data\output-05_07-21_07_24.txt" />
+    <None Include="Assets\Resources\Data\output-05_07-20_46_29.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\Resources\Data\output-05_07-21_05_58.txt" />
+    <None Include="Assets\Resources\Data\output-05_07-21_03_23.txt" />
+    <None Include="Assets\Resources\Data\output-05_07-20_46_52.txt" />
+    <None Include="Assets\Resources\Data\output-05_07-21_04_31.txt" />
+    <None Include="Assets\Resources\Data\output-05_07-21_04_22.txt" />
     <None Include="Assets\EmojiInfo\info.txt" />
     <Reference Include="Unity.XR.Management">
       <HintPath>C:/Users/Ari/Documents/GitHub/spatial_memory_vr/Spatial Memory in VR/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>

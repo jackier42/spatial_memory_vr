@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class StimulusObject : MonoBehaviour
 {
     public Text stimulusText;
+    public MemoryObjects memoryObjects;
+    private int lastRandomCharIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
-        AssignRandomLetter();
         stimulusText = this.GetComponentInChildren<Text>();
     }
 
@@ -21,8 +22,17 @@ public class StimulusObject : MonoBehaviour
 
     public void AssignRandomLetter()
     {
-        int randomCharIndex = Random.Range(33, 91);
-        char randomChar = (char)randomCharIndex;
+        int randomCharIndex = Random.Range(0, 19);
+        while (lastRandomCharIndex == randomCharIndex)
+            randomCharIndex = Random.Range(0, 19);
+        lastRandomCharIndex = randomCharIndex;
+        string randomChar = memoryObjects.memoryObjects[memoryObjects.letterStimuliPositions[randomCharIndex]].GetComponentInChildren<Text>().text;
         stimulusText.text = randomChar.ToString();
+    }
+
+    public void AssignRandomEmoji()
+    {
+
+
     }
 }

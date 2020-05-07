@@ -1,0 +1,8 @@
+start
+incorrect MemoryObject time taken 4.123861 global timer 4.123861
+incorrect MemoryObject time taken 1.314736 global timer 5.438598
+incorrect MemoryObject time taken 1.601366 global timer 9.484713
+incorrect MemoryObject time taken 1.893943 global timer 11.37866
+incorrect MemoryObject time taken 2.655442 global timer 14.0341
+incorrect MemoryObject time taken 0.8081703 global timer 14.84227
+correct MemoryObject time taken 1.536963 global timer 16.37923

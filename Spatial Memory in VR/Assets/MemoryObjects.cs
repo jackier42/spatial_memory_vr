@@ -7,19 +7,22 @@ using UnityEngine.UI;
 
 public class MemoryObjects : MonoBehaviour
 {
-    public List <Text> memoryObjects;
-    public HashSet<char> symbolsUsed;
+    public List <GameObject> memoryObjects;
+    public HashSet <char> symbolsUsed;
+    public HashSet <int> emojisUsed;
+    public List<int> letterStimuliPositions;
+    public List<int> emojiStimuliPositions;
+    public List<string> line;
 
     void Start()
     {
-        var children = this.gameObject.GetComponentsInChildren<Text>();
-        print(children.Length);
         symbolsUsed = new HashSet<char>();
-        List <string> line = new List<string>();
-        foreach (var child in children)
+        emojisUsed = new HashSet<int>();
+        line = new List<string>();
+        foreach (Transform child in transform)
         {
-            Text textComponent = child;
-            memoryObjects.Add(textComponent);
+            GameObject memoryObject = child.gameObject;
+            memoryObjects.Add(memoryObject);
 
             int randomCharIndex = UnityEngine.Random.Range(33, 91);
             char randomChar = (char)randomCharIndex;
@@ -30,21 +33,39 @@ public class MemoryObjects : MonoBehaviour
             }
 
             symbolsUsed.Add(randomChar);
-            textComponent.text = randomChar.ToString();
+            memoryObject.GetComponentInChildren<Text>().text = randomChar.ToString();
+            //var texture = Resources.Load<Texture>("EmojiImages/1.png");
+            Texture2D tex = (Texture2D)Resources.Load("EmojiImages/1.png", typeof(Texture2D));
+            //memoryObject.GetComponentInChildren<RawImage>().texture = tex;
             
 
-            line.Add(child.gameObject.transform.parent.parent.name + " " + child.text);
+            line.Add(child.gameObject.transform.name + " " + memoryObject.GetComponentInChildren<Text>().text);
             
         }
-        var path = "D:/data.txt";
-        File.WriteAllLines(path, line);
+
+        for (int i = 0; i < 20; i++)
+        {
+            var randomNumber = UnityEngine.Random.Range(0, memoryObjects.Count);
+            while (letterStimuliPositions.Contains(randomNumber))
+            {
+                randomNumber = UnityEngine.Random.Range(0, memoryObjects.Count);
+            }
+            letterStimuliPositions.Add(randomNumber);
+
+            randomNumber = UnityEngine.Random.Range(0, memoryObjects.Count);
+            while (emojiStimuliPositions.Contains(randomNumber))
+            {
+                randomNumber = UnityEngine.Random.Range(0, memoryObjects.Count);
+            }
+            emojiStimuliPositions.Add(randomNumber);
+        }
     }
 
     public void SetObjectsBlank()
     {
         foreach (var obj in memoryObjects)
         {
-            obj.gameObject.GetComponentInParent<Canvas>().enabled = false;
+            obj.gameObject.GetComponentInChildren<Canvas>().enabled = false;
         }
     }
 }

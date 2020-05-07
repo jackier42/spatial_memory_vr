@@ -1,0 +1,62 @@
+MemoryObjects $
+MemoryObjects /
+MemoryObjects K
+MemoryObjects 6
+MemoryObjects G
+MemoryObjects ,
+MemoryObjects @
+MemoryObjects N
+MemoryObjects =
+MemoryObjects (
+MemoryObjects P
+MemoryObjects ?
+MemoryObjects *
+MemoryObjects -
+MemoryObjects T
+MemoryObjects D
+MemoryObjects M
+MemoryObjects J
+MemoryObjects #
+MemoryObjects "
+MemoryObjects Z
+MemoryObjects W
+MemoryObjects >
+MemoryObjects I
+MemoryObjects '
+MemoryObjects 7
+MemoryObjects %
+MemoryObjects V
+MemoryObjects 0
+MemoryObjects 8
+MemoryObjects 9
+MemoryObjects 1
+MemoryObjects L
+MemoryObjects !
+MemoryObjects O
+MemoryObjects H
+MemoryObjects +
+MemoryObjects )
+MemoryObjects U
+MemoryObjects B
+MemoryObjects :
+MemoryObjects ;
+MemoryObjects A
+MemoryObjects <
+MemoryObjects 2
+MemoryObjects R
+MemoryObjects E
+MemoryObjects F
+MemoryObjects C
+MemoryObjects Q
+MemoryObjects 3
+MemoryObjects .
+MemoryObjects 4
+MemoryObjects &
+MemoryObjects X
+transition to 1 at 5.425541
+transition to 2 at 8.442712
+transition to 3 at 11.69621
+incorrect MemoryObject time taken 0.6135197 global timer 12.30973
+incorrect MemoryObject time taken 2.402806 global timer 14.71253
+incorrect MemoryObject time taken 1.068483 global timer 15.78102
+incorrect MemoryObject time taken 2.075138 global timer 17.85616

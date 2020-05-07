@@ -62,9 +62,26 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+
+            //CheckCameraHit();
             RotateView();
-            
         }
+
+       /* public void ChangeCamera(Camera newCamera)
+        {
+            m_Camera = newCamera;
+        }
+
+        private void CheckCameraHit()
+        {
+            RaycastHit hit;
+            var cameraCenter = m_Camera.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, m_Camera.nearClipPlane));
+            if (Physics.Raycast(cameraCenter, m_Camera.transform.forward, out hit, 1000))
+            {
+                var obj = hit.transform.gameObject;
+                print("HIT! " + obj.name);
+            }
+        }*/
 
 
         private void PlayLandingSound()
