@@ -26,7 +26,14 @@ public class CameraRaycast : MonoBehaviour
         if (Physics.Raycast(cameraCenter, m_Camera.transform.forward, out hit, 1000))
         {
             var obj = hit.transform.gameObject;
-            print("HIT! " + obj.name);
+            
+            obj.GetComponentInChildren<MemoryObjectIndividual>()?.Highlight();
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+                print("HIT! " + obj.name);
+                obj.GetComponentInChildren<MemoryObjectIndividual>()?.ObjectHit();
+            }
         }
     }
 }

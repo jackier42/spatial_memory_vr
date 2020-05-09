@@ -1,0 +1,88 @@
+1 9
+2 Z
+3 $
+4 L
+5 A
+6 >
+7 6
+8 .
+9 @
+10 I
+11 Q
+12 U
+13 (
+14 T
+15 +
+16 D
+17 #
+18 2
+19 <
+20 P
+21 1
+22 E
+23 %
+24 V
+25 Y
+26 0
+27 *
+28 M
+29 R
+30 7
+31 W
+32 !
+33 ?
+34 :
+35 ;
+36 3
+37 S
+38 8
+39 G
+40 =
+41 O
+42 F
+43 5
+44 K
+45 /
+46 -
+47 ,
+48 H
+49 "
+50 4
+51 X
+52 J
+53 )
+54 &
+55 B
+transition to 1 at 2.190372
+correct " time taken 6.208719 global timer 6.208719
+correct Y time taken 4.474142 global timer 10.68286
+correct Y time taken 2.067358 global timer 12.75022
+incorrect D time taken 1.965461 global timer 14.71568
+incorrect " time taken 0 global timer 14.71568
+incorrect 1 time taken 4.213213 global timer 18.92889
+correct J time taken 0 global timer 18.92889
+transition to 2 at 18.92889
+transition to 3 at 21.11308
+correct Y time taken 1.665512 global timer 22.77859
+incorrect A time taken 1.399235 global timer 24.17783
+correct " time taken 0.668148 global timer 24.84598
+correct J time taken 1.827545 global timer 26.67352
+incorrect ? time taken 2.040234 global timer 28.71375
+incorrect J time taken 0 global timer 28.71375
+transition to 4 at 28.71375
+transition to 5 at 34.18332
+correct 3 time taken 15.17958 global timer 43.89333
+correct 27 time taken 3.621361 global timer 47.51469
+incorrect 13 time taken 6.733383 global timer 54.24808
+incorrect 5 time taken 0 global timer 54.24808
+correct 3 time taken 1.979691 global timer 56.22777
+correct 5 time taken 1.632404 global timer 57.86017
+transition to 6 at 57.86017
+transition to 7 at 60.0612
+correct 5 time taken 3.723015 global timer 61.58319
+correct 5 time taken 1.277332 global timer 62.86052
+correct 27 time taken 2.866592 global timer 65.72711
+correct 3 time taken 1.679344 global timer 67.40646
+correct 3 time taken 0.9096909 global timer 68.31615
+correct 5 time taken 1.749161 global timer 70.06531
+transition to 8 at 70.06531

@@ -1,0 +1,87 @@
+1 =
+2 V
+3 K
+4 C
+5 I
+6 )
+7 6
+8 "
+9 +
+10 T
+11 <
+12 M
+13 N
+14 Z
+15 $
+16 X
+17 Q
+18 R
+19 D
+20 J
+21 '
+22 S
+23 .
+24 7
+25 !
+26 1
+27 L
+28 5
+29 E
+30 ,
+31 W
+32 /
+33 P
+34 2
+35 F
+36 4
+37 :
+38 Y
+39 ?
+40 9
+41 G
+42 U
+43 A
+44 #
+45 ;
+46 O
+47 %
+48 B
+49 (
+50 &
+51 -
+52 *
+53 @
+54 H
+55 3
+transition to 1 at 4.213158
+correct 2 time taken 9.571443 global timer 9.571443 aiming for 2
+correct R time taken 1.808039 global timer 11.37948 aiming for R
+correct 5 time taken 7.388707 global timer 18.76819 aiming for 5
+correct R time taken 1.745516 global timer 20.5137 aiming for R
+correct 2 time taken 1.257065 global timer 21.77077 aiming for 2
+correct 5 time taken 1.108902 global timer 22.87967 aiming for 5
+transition to 2 at 22.87967
+transition to 3 at 24.79131
+correct 5 time taken 1.144701 global timer 25.93601 aiming for 5
+correct R time taken 0.868742 global timer 26.80476 aiming for R
+correct 2 time taken 1.264265 global timer 28.06902 aiming for 2
+correct 2 time taken 2.36673 global timer 30.43575 aiming for 2
+correct R time taken 1.177689 global timer 31.61344 aiming for R
+correct 5 time taken 1.133257 global timer 32.7467 aiming for 5
+transition to 4 at 32.7467
+transition to 5 at 37.14518
+correct 28 time taken 16.07933 global timer 48.82603 aiming for 28
+correct 28 time taken 2.190002 global timer 51.01603 aiming for 28
+correct 55 time taken 8.589737 global timer 59.60577 aiming for 55
+correct 55 time taken 1.422611 global timer 61.02838 aiming for 55
+correct 10 time taken 2.401009 global timer 63.42939 aiming for 10
+correct 10 time taken 0.8328705 global timer 64.26226 aiming for 10
+transition to 6 at 64.26226
+transition to 7 at 66.08556
+correct 10 time taken 4.754601 global timer 69.01686 aiming for 10
+correct 55 time taken 4.635254 global timer 73.65211 aiming for 55
+correct 55 time taken 1.27813 global timer 74.93024 aiming for 55
+correct 28 time taken 4.933174 global timer 79.86342 aiming for 28
+correct 28 time taken 3.133522 global timer 82.99694 aiming for 28
+correct 10 time taken 2.776344 global timer 85.77328 aiming for 10
+transition to 8 at 85.77328

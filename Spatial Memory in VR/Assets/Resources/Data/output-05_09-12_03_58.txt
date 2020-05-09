@@ -1,0 +1,64 @@
+1 $
+2 4
+3 R
+4 A
+5 E
+6 ;
+7 U
+8 O
+9 )
+10 I
+11 =
+12 G
+13 *
+14 D
+15 :
+16 Q
+17 /
+18 -
+19 J
+20 T
+21 '
+22 H
+23 L
+24 F
+25 W
+26 S
+27 N
+28 !
+29 X
+30 >
+31 K
+32 2
+33 #
+34 ?
+35 6
+36 0
+37 9
+38 7
+39 @
+40 %
+41 +
+42 3
+43 B
+44 .
+45 M
+46 "
+47 C
+48 <
+49 &
+50 V
+51 ,
+52 (
+53 P
+54 Z
+55 1
+transition to 1 at 1.038564
+incorrect I time taken 3.178331 global timer 3.178331
+correct ) time taken 3.126986 global timer 6.305317
+correct = time taken 1.550954 global timer 7.856271
+correct U time taken 1.887695 global timer 9.743966
+correct U time taken 1.421383 global timer 11.16535
+correct = time taken 1.502185 global timer 12.66753
+correct ) time taken 0.8333225 global timer 13.50086
+transition to 2 at 13.50086

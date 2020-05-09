@@ -1,0 +1,89 @@
+1 5
+2 ,
+3 ;
+4 6
+5 A
+6 :
+7 Y
+8 L
+9 P
+10 N
+11 M
+12 0
+13 C
+14 F
+15 Z
+16 %
+17 U
+18 K
+19 9
+20 T
+21 D
+22 >
+23 R
+24 G
+25 8
+26 X
+27 )
+28 1
+29 @
+30 '
+31 B
+32 .
+33 /
+34 &
+35 I
+36 H
+37 !
+38 -
+39 O
+40 J
+41 W
+42 *
+43 S
+44 ?
+45 E
+46 2
+47 4
+48 7
+49 =
+50 #
+51 V
+52 Q
+53 +
+54 "
+55 (
+transition to 1 at 1.270091
+incorrect : time taken 2.465475 global timer 2.465475
+incorrect : time taken 0.4033232 global timer 2.868798
+incorrect : time taken 0.4513161 global timer 3.320114
+incorrect : time taken 0.4439573 global timer 3.764071
+incorrect : time taken 0.3786635 global timer 4.142735
+incorrect : time taken 0.2285371 global timer 4.371272
+incorrect : time taken 0.2509375 global timer 4.62221
+incorrect : time taken 0.1984591 global timer 4.820669
+incorrect : time taken 0.1748695 global timer 4.995538
+incorrect : time taken 0.4199553 global timer 5.415493
+incorrect : time taken 0.3333335 global timer 5.748827
+incorrect : time taken 0.2619481 global timer 6.010775
+incorrect : time taken 0.3107548 global timer 6.32153
+incorrect : time taken 0.29844 global timer 6.61997
+incorrect : time taken 0.2468209 global timer 6.866791
+transition to 2 at 6.866791
+transition to 3 at 8.318006
+incorrect U time taken 0.9933071 global timer 9.311313
+incorrect U time taken 1.25238 global timer 10.56369
+incorrect U time taken 0.4886103 global timer 11.0523
+incorrect U time taken 0.5012465 global timer 11.55355
+incorrect U time taken 0.4289398 global timer 11.98249
+incorrect U time taken 0.4397726 global timer 12.42226
+incorrect U time taken 0.6068945 global timer 13.02916
+incorrect U time taken 0.4372234 global timer 13.46638
+incorrect U time taken 0.4753618 global timer 13.94174
+incorrect U time taken 0.5169182 global timer 14.45866
+incorrect U time taken 0.4067755 global timer 14.86544
+incorrect U time taken 0.4409676 global timer 15.3064
+incorrect U time taken 0.3991175 global timer 15.70552
+incorrect U time taken 0.5053234 global timer 16.21084
+incorrect U time taken 0.5469666 global timer 16.75781
+transition to 4 at 16.75781

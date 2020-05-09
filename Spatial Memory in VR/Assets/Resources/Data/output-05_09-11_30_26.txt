@@ -1,0 +1,61 @@
+1 ;
+2 I
+3 !
+4 )
+5 U
+6 4
+7 M
+8 F
+9 Y
+10 ?
+11 2
+12 V
+13 5
+14 S
+15 O
+16 T
+17 &
+18 $
+19 <
+20 #
+21 A
+22 C
+23 H
+24 X
+25 L
+26 '
+27 Q
+28 E
+29 (
+30 G
+31 %
+32 .
+33 6
+34 R
+35 Z
+36 *
+37 W
+38 1
+39 0
+40 8
+41 "
+42 9
+43 P
+44 7
+45 K
+46 ,
+47 +
+48 J
+49 @
+50 -
+51 >
+52 D
+53 N
+54 3
+55 B
+transition to 1 at 1.16004
+transition to 2 at 4.171781
+transition to 3 at 7.145144
+incorrect < time taken 2.137521 global timer 9.282665
+incorrect H time taken 1.537514 global timer 10.82018
+incorrect 8 time taken 0.920351 global timer 11.74053

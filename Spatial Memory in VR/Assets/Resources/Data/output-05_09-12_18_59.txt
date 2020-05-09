@@ -1,0 +1,72 @@
+1 K
+2 >
+3 :
+4 J
+5 ;
+6 7
+7 4
+8 =
+9 U
+10 %
+11 1
+12 8
+13 .
+14 G
+15 /
+16 !
+17 H
+18 ?
+19 E
+20 D
+21 "
+22 $
+23 P
+24 9
+25 N
+26 W
+27 5
+28 Y
+29 6
+30 T
+31 C
+32 O
+33 @
+34 F
+35 '
+36 X
+37 I
+38 B
+39 Z
+40 *
+41 V
+42 +
+43 S
+44 <
+45 )
+46 &
+47 0
+48 R
+49 2
+50 -
+51 A
+52 L
+53 3
+54 M
+55 ,
+transition to 1 at 1.602016
+incorrect Y time taken 3.320414 global timer 3.320414
+incorrect Y time taken 0.7566354 global timer 4.07705
+incorrect Y time taken 0.4944062 global timer 4.571456
+incorrect Y time taken 0.5295143 global timer 5.10097
+incorrect Y time taken 1.14334 global timer 6.24431
+incorrect Y time taken 0.754631 global timer 6.998941
+transition to 2 at 6.998941
+transition to 3 at 9.524801
+incorrect Y time taken 1.728909 global timer 11.25371
+incorrect Y time taken 1.045481 global timer 12.29919
+incorrect Y time taken 0.5885925 global timer 12.88778
+incorrect Y time taken 0.6861172 global timer 13.5739
+incorrect Y time taken 0.9669371 global timer 14.54084
+incorrect Y time taken 0.6744595 global timer 15.2153
+transition to 4 at 15.2153
+transition to 5 at 19.05621

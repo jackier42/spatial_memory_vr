@@ -1,0 +1,62 @@
+1 S
+2 A
+3 +
+4 :
+5 N
+6 F
+7 H
+8 7
+9 X
+10 Z
+11 B
+12 Q
+13 >
+14 @
+15 2
+16 O
+17 5
+18 6
+19 3
+20 L
+21 #
+22 9
+23 ,
+24 ?
+25 =
+26 8
+27 K
+28 -
+29 E
+30 .
+31 %
+32 '
+33 0
+34 J
+35 W
+36 4
+37 1
+38 C
+39 U
+40 $
+41 "
+42 P
+43 &
+44 (
+45 D
+46 Y
+47 )
+48 <
+49 M
+50 /
+51 V
+52 I
+53 *
+54 ;
+55 R
+transition to 1 at 3.347094
+incorrect F time taken 4.716035 global timer 4.716035
+correct RawImage time taken 0 global timer 4.716035
+incorrect N time taken 2.607139 global timer 7.323174
+correct RawImage time taken 0 global timer 7.323174
+correct + time taken 1.557506 global timer 8.88068
+correct RawImage time taken 0 global timer 8.88068

@@ -13,6 +13,7 @@ public class MemoryObjects : MonoBehaviour
     public List<int> letterStimuliPositions;
     public List<int> emojiStimuliPositions;
     public List<string> line;
+    public int numberOfStimuli;
 
     void Start()
     {
@@ -34,16 +35,18 @@ public class MemoryObjects : MonoBehaviour
 
             symbolsUsed.Add(randomChar);
             memoryObject.GetComponentInChildren<Text>().text = randomChar.ToString();
-            //var texture = Resources.Load<Texture>("EmojiImages/1.png");
-            Texture2D tex = (Texture2D)Resources.Load("EmojiImages/1.png", typeof(Texture2D));
-            //memoryObject.GetComponentInChildren<RawImage>().texture = tex;
-            
+
+            string texturePath = "EmojiImages/" + (randomCharIndex - 33).ToString();
+            Texture2D tex = Resources.Load <Texture2D>(texturePath);
+            RawImage image = memoryObject.GetComponentInChildren<RawImage>();
+            image.texture = tex;
+            //image.enabled = false;
 
             line.Add(child.gameObject.transform.name + " " + memoryObject.GetComponentInChildren<Text>().text);
             
         }
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < numberOfStimuli; i++)
         {
             var randomNumber = UnityEngine.Random.Range(0, memoryObjects.Count);
             while (letterStimuliPositions.Contains(randomNumber))
@@ -68,4 +71,23 @@ public class MemoryObjects : MonoBehaviour
             obj.gameObject.GetComponentInChildren<Canvas>().enabled = false;
         }
     }
+
+    public void SetObjectsToDisplayLetters()
+    {
+        foreach (var obj in memoryObjects)
+        {
+            obj.gameObject.GetComponentInChildren<RawImage>().enabled = false;
+            obj.gameObject.GetComponentInChildren<Text>().enabled = true;
+        }
+    }
+
+    public void SetObjectsToDisplayEmojis()
+    {
+        foreach (var obj in memoryObjects)
+        {
+            obj.gameObject.GetComponentInChildren<RawImage>().enabled = true;
+            obj.gameObject.GetComponentInChildren<Text>().enabled = false;
+        }
+    }
+
 }
